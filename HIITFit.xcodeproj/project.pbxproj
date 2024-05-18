@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3416325C2BF7741F00B330E2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416325B2BF7741F00B330E2 /* WelcomeView.swift */; };
+		3416325E2BF7744700B330E2 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416325D2BF7744700B330E2 /* ExerciseView.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
 		CD30C926251474DC0049DB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C925251474DC0049DB93 /* ContentView.swift */; };
 		CD30C928251474DD0049DB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD30C927251474DD0049DB93 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3416325B2BF7741F00B330E2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3416325D2BF7744700B330E2 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD30C923251474DC0049DB93 /* HIITFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFitApp.swift; sourceTree = "<group>"; };
 		CD30C925251474DC0049DB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3416325F2BF7747600B330E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD30C925251474DC0049DB93 /* ContentView.swift */,
+				3416325B2BF7741F00B330E2 /* WelcomeView.swift */,
+				3416325D2BF7744700B330E2 /* ExerciseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CD30C917251474DC0049DB93 = {
 			isa = PBXGroup;
 			children = (
@@ -65,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				CD30C923251474DC0049DB93 /* HIITFitApp.swift */,
-				CD30C925251474DC0049DB93 /* ContentView.swift */,
+				3416325F2BF7747600B330E2 /* Views */,
 				CD30C93D25147A8C0049DB93 /* DateExtension.swift */,
 				CD30C93E25147A8C0049DB93 /* ImageExtension.swift */,
 				CD30C927251474DD0049DB93 /* Assets.xcassets */,
@@ -122,8 +136,9 @@
 		CD30C918251474DC0049DB93 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = Kodeco;
 				TargetAttributes = {
 					CD30C91F251474DC0049DB93 = {
@@ -192,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3416325E2BF7744700B330E2 /* ExerciseView.swift in Sources */,
+				3416325C2BF7741F00B330E2 /* WelcomeView.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
@@ -239,6 +256,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -300,6 +318,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
