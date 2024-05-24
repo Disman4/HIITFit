@@ -14,7 +14,6 @@ struct Exersice{
     }
 }
 
-
 extension Exersice{
        static let exersices = [
            Exersice(exersiceName: ExerciseEnum.squat.rawValue,

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3416325C2BF7741F00B330E2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416325B2BF7741F00B330E2 /* WelcomeView.swift */; };
 		3416325E2BF7744700B330E2 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416325D2BF7744700B330E2 /* ExerciseView.swift */; };
+		341632612BF8A97500B330E2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341632602BF8A97500B330E2 /* HeaderView.swift */; };
+		34564FA92C00A38E008B1C60 /* Exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FA82C00A38E008B1C60 /* Exersice.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
 		CD30C926251474DC0049DB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C925251474DC0049DB93 /* ContentView.swift */; };
 		CD30C928251474DD0049DB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD30C927251474DD0049DB93 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		3416325B2BF7741F00B330E2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3416325D2BF7744700B330E2 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		341632602BF8A97500B330E2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		34564FA82C00A38E008B1C60 /* Exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exersice.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD30C923251474DC0049DB93 /* HIITFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFitApp.swift; sourceTree = "<group>"; };
 		CD30C925251474DC0049DB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,7 @@
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				3416325B2BF7741F00B330E2 /* WelcomeView.swift */,
 				3416325D2BF7744700B330E2 /* ExerciseView.swift */,
+				341632602BF8A97500B330E2 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -80,6 +85,7 @@
 			children = (
 				CD30C923251474DC0049DB93 /* HIITFitApp.swift */,
 				3416325F2BF7747600B330E2 /* Views */,
+				34564FA82C00A38E008B1C60 /* Exersice.swift */,
 				CD30C93D25147A8C0049DB93 /* DateExtension.swift */,
 				CD30C93E25147A8C0049DB93 /* ImageExtension.swift */,
 				CD30C927251474DD0049DB93 /* Assets.xcassets */,
@@ -208,11 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3416325E2BF7744700B330E2 /* ExerciseView.swift in Sources */,
+				34564FA92C00A38E008B1C60 /* Exersice.swift in Sources */,
 				3416325C2BF7741F00B330E2 /* WelcomeView.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				CD30C94025147A8C0049DB93 /* ImageExtension.swift in Sources */,
+				341632612BF8A97500B330E2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
