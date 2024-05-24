@@ -8,7 +8,7 @@ struct ExerciseView: View {
     }
 
     let index: Int
-
+    let interval: TimeInterval = 30
 
     var body: some View {
         GeometryReader {geometry in
@@ -24,7 +24,10 @@ struct ExerciseView: View {
                         .foregroundColor(.red)
                 }
 
-                Text("Timer")
+                Text(Date().addingTimeInterval(interval),style: .timer)
+                    .font(.system(size: geometry.size.height * 0.07))
+
+                
                 Text("Start/Done Button")
                 Text("Rating")
                 Text("History")
