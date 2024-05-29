@@ -13,6 +13,10 @@
 		34564FA92C00A38E008B1C60 /* Exersice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FA82C00A38E008B1C60 /* Exersice.swift */; };
 		34564FAB2C00DFAE008B1C60 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FAA2C00DFAE008B1C60 /* RatingView.swift */; };
 		34564FAD2C00F1D5008B1C60 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FAC2C00F1D5008B1C60 /* VideoPlayerView.swift */; };
+		34564FAF2C032025008B1C60 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FAE2C032025008B1C60 /* HistoryView.swift */; };
+		34564FB22C0328CF008B1C60 /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FB12C0328CF008B1C60 /* HistoryStore.swift */; };
+		34564FB42C032EEA008B1C60 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FB32C032EEA008B1C60 /* HistoryStoreDevData.swift */; };
+		34564FB62C04A70B008B1C60 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34564FB52C04A70B008B1C60 /* SuccessView.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
 		CD30C926251474DC0049DB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C925251474DC0049DB93 /* ContentView.swift */; };
 		CD30C928251474DD0049DB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD30C927251474DD0049DB93 /* Assets.xcassets */; };
@@ -32,6 +36,10 @@
 		34564FA82C00A38E008B1C60 /* Exersice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exersice.swift; sourceTree = "<group>"; };
 		34564FAA2C00DFAE008B1C60 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		34564FAC2C00F1D5008B1C60 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		34564FAE2C032025008B1C60 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		34564FB12C0328CF008B1C60 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		34564FB32C032EEA008B1C60 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
+		34564FB52C04A70B008B1C60 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD30C923251474DC0049DB93 /* HIITFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFitApp.swift; sourceTree = "<group>"; };
 		CD30C925251474DC0049DB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,12 +70,23 @@
 			children = (
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				3416325B2BF7741F00B330E2 /* WelcomeView.swift */,
+				34564FB52C04A70B008B1C60 /* SuccessView.swift */,
 				3416325D2BF7744700B330E2 /* ExerciseView.swift */,
 				34564FAC2C00F1D5008B1C60 /* VideoPlayerView.swift */,
 				34564FAA2C00DFAE008B1C60 /* RatingView.swift */,
+				34564FAE2C032025008B1C60 /* HistoryView.swift */,
 				341632602BF8A97500B330E2 /* HeaderView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		34564FB02C0328AC008B1C60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				34564FA82C00A38E008B1C60 /* Exersice.swift */,
+				34564FB12C0328CF008B1C60 /* HistoryStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CD30C917251474DC0049DB93 = {
@@ -91,7 +110,7 @@
 			children = (
 				CD30C923251474DC0049DB93 /* HIITFitApp.swift */,
 				3416325F2BF7747600B330E2 /* Views */,
-				34564FA82C00A38E008B1C60 /* Exersice.swift */,
+				34564FB02C0328AC008B1C60 /* Model */,
 				CD30C93D25147A8C0049DB93 /* DateExtension.swift */,
 				CD30C93E25147A8C0049DB93 /* ImageExtension.swift */,
 				CD30C927251474DD0049DB93 /* Assets.xcassets */,
@@ -106,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				CD30C92A251474DD0049DB93 /* Preview Assets.xcassets */,
+				34564FB32C032EEA008B1C60 /* HistoryStoreDevData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -223,7 +243,11 @@
 				34564FA92C00A38E008B1C60 /* Exersice.swift in Sources */,
 				3416325C2BF7741F00B330E2 /* WelcomeView.swift in Sources */,
 				34564FAB2C00DFAE008B1C60 /* RatingView.swift in Sources */,
+				34564FB22C0328CF008B1C60 /* HistoryStore.swift in Sources */,
+				34564FB42C032EEA008B1C60 /* HistoryStoreDevData.swift in Sources */,
+				34564FB62C04A70B008B1C60 /* SuccessView.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
+				34564FAF2C032025008B1C60 /* HistoryView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				CD30C94025147A8C0049DB93 /* ImageExtension.swift in Sources */,

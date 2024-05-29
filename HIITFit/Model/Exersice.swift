@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct Exersice{
-    let exersiceName:  String
+struct Exercise{
+    let exerciseName:  String
     let videoName: String
 
     enum ExerciseEnum: String{
@@ -14,15 +14,15 @@ struct Exersice{
     }
 }
 
-extension Exersice{
-       static let exersices = [
-           Exersice(exersiceName: ExerciseEnum.squat.rawValue,
+extension Exercise{
+       static let exercises = [
+           Exercise(exerciseName: ExerciseEnum.squat.rawValue,
                     videoName: "squat"),
-           Exersice(exersiceName: ExerciseEnum.stepUp.rawValue,
+           Exercise(exerciseName: ExerciseEnum.stepUp.rawValue,
                     videoName: "step-up"),
-           Exersice(exersiceName: ExerciseEnum.burpee.rawValue,
+           Exercise(exerciseName: ExerciseEnum.burpee.rawValue,
                     videoName: "burpee"),
-           Exersice(exersiceName: ExerciseEnum.sunSalute.rawValue,
+           Exercise(exerciseName: ExerciseEnum.sunSalute.rawValue,
                     videoName: "sun-salute")
        ]
    }

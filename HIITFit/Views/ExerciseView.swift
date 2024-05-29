@@ -3,9 +3,11 @@ import AVKit
 
 struct ExerciseView: View {
 
+    @Binding var selectedTab: Int
+
     //computed property using Exercise type
-    var exercise: Exersice{
-        Exersice.exersices[index]
+    var exercise: Exercise{
+        Exercise.exercises[index]
     }
 
     let index: Int
@@ -13,12 +15,26 @@ struct ExerciseView: View {
     //time interval for exercise timer (30 seconds)
     let interval: TimeInterval = 30
 
+    var lastExercise: Bool{
+        index + 1 == Exercise.exercises.count
+    }
+
+    var startButton: some View {
+      Button("Start Exercise") { }
+    }
+
+    var doneButton: some View {
+      Button("Done") {
+        selectedTab = lastExercise ? 9 : selectedTab + 1
+      }
+    }
+
     var body: some View {
         GeometryReader {geometry in
             VStack{
 
                 //Header
-                HeaderView(exerciseName: exercise.exersiceName)
+                HeaderView(selectedTab: $selectedTab, titleText: exercise.exerciseName )
                     .padding(.bottom)
 
 
@@ -31,9 +47,13 @@ struct ExerciseView: View {
                     .font(.system(size: geometry.size.height * 0.07))
 
                 //button to start and stop
-                Button("Start/Done"){ }
-                    .font(.title3)
-                    .padding()
+
+                HStack(spacing: 150){
+                    startButton
+                    doneButton
+                        .font(.title3)
+                        .padding()
+                }
 
 
 
@@ -50,6 +70,6 @@ struct ExerciseView: View {
 }
 
 #Preview {
-    ExerciseView(index: 0)
+    ExerciseView(selectedTab: .constant(1), index: 1)
 }
 
