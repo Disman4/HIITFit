@@ -5,6 +5,8 @@ struct ExerciseView: View {
 
     @Binding var selectedTab: Int
     @State private var rating = 0
+    @State private var showHistory = false
+    @State private var showSuccess = false
 
     //computed property using Exercise type
     var exercise: Exercise{
@@ -25,9 +27,13 @@ struct ExerciseView: View {
     }
 
     var doneButton: some View {
-      Button("Done") {
-        selectedTab = lastExercise ? 9 : selectedTab + 1
-      }
+        Button("Done") {
+            if lastExercise {
+                showSuccess.toggle()
+            } else {
+                selectedTab += 1
+            }
+        }
     }
 
     var body: some View {
@@ -52,6 +58,10 @@ struct ExerciseView: View {
                 HStack(spacing: 150){
                     startButton
                     doneButton
+                        .sheet(isPresented: $showSuccess) {
+                            SuccessView(selectedTab: $selectedTab)
+                                .presentationDetents([.medium, .large])
+                        }
                         .font(.title3)
                         .padding()
                 }
@@ -62,7 +72,12 @@ struct ExerciseView: View {
                     .padding()
 
                 Spacer()
-                Button("History"){}
+                Button("History"){
+                    showHistory.toggle()
+                }
+                .sheet(isPresented: $showHistory) {
+                    HistoryView(showHistory: $showHistory)
+                }
                     .padding(.bottom)
             }
         }
@@ -71,6 +86,6 @@ struct ExerciseView: View {
 }
 
 #Preview {
-    ExerciseView(selectedTab: .constant(1), index: 1)
+    ExerciseView(selectedTab: .constant(3), index: 3)
 }
 
