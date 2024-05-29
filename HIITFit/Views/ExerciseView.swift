@@ -4,6 +4,7 @@ import AVKit
 struct ExerciseView: View {
 
     @Binding var selectedTab: Int
+    @State private var rating = 0
 
     //computed property using Exercise type
     var exercise: Exercise{
@@ -57,7 +58,7 @@ struct ExerciseView: View {
 
 
 
-                RatingView()
+                RatingView(rating: $rating)
                     .padding()
 
                 Spacer()
